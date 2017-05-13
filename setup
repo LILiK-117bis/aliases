@@ -1,1 +1,3 @@
+#! /usr/bin/env bash
+
 nmcli connection add type vlan con-name LILiK-management dev eth0 id 1
