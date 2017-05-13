@@ -1,2 +1,4 @@
 alias umanagement="nmcli connection up LILiK-management"
 alias dmanagement="nmcli connection down LILiK-management"
+
+alias genvpn="openssl req -new -keyout client.key -out client.req -subj '/C=IT/ST=Tuscany/L=Florence/O=LILiK/OU=vpn/CN=$(whoami)'"
