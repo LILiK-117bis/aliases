@@ -1,0 +1,7 @@
+#! /usr/bin/env bash
+
+set -eo
+
+nmcli connection delete LILiK-management
+
+nmcli connection delete LILiK-switcher
