@@ -1,3 +1,15 @@
 #! /usr/bin/env bash
 
-nmcli connection add type vlan con-name LILiK-management dev eth0 id 1
+set -eo
+
+nmcli connection add type vlan \
+	con-name LILiK-management \
+	dev eth0 \
+	id 1
+
+nmcli connection add type ethernet \
+	ifname eth0 \
+	con-name LILiK-switcher \
+	autoconnect no \
+	ip4 10.150.40.$((2 + RANDOM % 255))/24 \
+	ipv4.gateway 10.150.40.1
