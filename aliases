@@ -1,4 +1,9 @@
+#! /usr/bin/env bash
+
 alias umanagement="nmcli connection up LILiK-management"
 alias dmanagement="nmcli connection down LILiK-management"
+
+alias uswitcher="nmcli connection up LILiK-switcher"
+alias dswitcher="nmcli connection down LILiK-switcher"
 
 alias genvpn="openssl req -new -keyout client.key -out client.req -subj '/C=IT/ST=Tuscany/L=Florence/O=LILiK/OU=vpn/CN=$(whoami)'"
