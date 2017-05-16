@@ -13,3 +13,10 @@ nmcli connection add type ethernet \
 	autoconnect no \
 	ip4 10.150.40.$((2 + RANDOM % 255))/24 \
 	ipv4.gateway 10.150.40.1
+
+nmcli connection add type ethernet \
+	ifname eth0 \
+	con-name LILiK-presidenza \
+	autoconnect no \
+	ip4 150.217.18.45/24 \
+	ipv4.gateway 150.217.18.1

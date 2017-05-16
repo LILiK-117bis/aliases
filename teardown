@@ -5,3 +5,5 @@ set -eo
 nmcli connection delete LILiK-management
 
 nmcli connection delete LILiK-switcher
+
+nmcli connection delete LILiK-presidenza

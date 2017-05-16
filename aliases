@@ -6,4 +6,7 @@ alias dmanagement="nmcli connection down LILiK-management"
 alias uswitcher="nmcli connection up LILiK-switcher"
 alias dswitcher="nmcli connection down LILiK-switcher"
 
+alias upresidenza="nmcli connection up LILiK-presidenza"
+alias dpresidenza="nmcli connection down LILiK-presidenza"
+
 alias genvpn="openssl req -new -keyout client.key -out client.req -subj '/C=IT/ST=Tuscany/L=Florence/O=LILiK/OU=vpn/CN=$(whoami)'"
